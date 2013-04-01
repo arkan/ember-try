@@ -1,0 +1,1 @@
+SwannBertholinV2.ApplicationView = Ember.View.extend()

@@ -1,0 +1,1 @@
+SwannBertholinV2.AlbumController = Ember.ObjectController.extend()

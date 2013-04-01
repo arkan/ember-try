@@ -1,0 +1,13 @@
+<p>coucou</p>
+
+<p>
+  {{id}} - {{name}}
+</p>
+
+<ul>
+{{#each picture in album.pictures}}
+  <li>{{pictures.description}}</li>
+{{else}}
+  <li>There are no pictures.</li>
+{{/each}}
+</ul>

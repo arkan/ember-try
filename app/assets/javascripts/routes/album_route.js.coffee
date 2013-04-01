@@ -1,0 +1,1 @@
+SwannBertholinV2.AlbumRoute = Ember.Route.extend()
