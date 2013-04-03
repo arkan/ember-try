@@ -1,3 +1,4 @@
-SwannBertholinV2.Album = DS.Model.extend({
-  name: DS.attr('string')
+App.Album = DS.Model.extend({
+  name: DS.attr('string'),
+  pictures: DS.hasMany('App.Picture')
 });

@@ -1,4 +1,4 @@
-SwannBertholinV2::Application.routes.draw do
+App::Application.routes.draw do
 
   namespace :api do
     resources :albums

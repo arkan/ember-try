@@ -17,4 +17,7 @@
 //= require ember-data
 //= require_self
 //= require swann_bertholin_v2
-SwannBertholinV2 = Ember.Application.create();
+Ember.LOG_BINDINGS = true;
+App = Ember.Application.create({
+  LOG_TRANSITIONS: true
+});

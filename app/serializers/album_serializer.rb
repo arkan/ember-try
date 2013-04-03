@@ -1,7 +1,5 @@
 class AlbumSerializer < ActiveModel::Serializer
-
   attributes :id, :name
-
   # embed :ids, :include => true
-  # has_many :pictures
+  has_many :pictures, embed: :objects
 end

@@ -1,0 +1,21 @@
+div#wrapper{
+  width: 100%;
+}
+
+div#menu{
+  border: 1px solid black;
+  width: 200px;
+  margin: 20px;
+  float: left;
+}
+
+div#content {
+  border: 1px solid black;
+  width: 80%;
+  margin: 20px;
+  float: left;
+}
+
+span.clear{
+  clear: both;
+}

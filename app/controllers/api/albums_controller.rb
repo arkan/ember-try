@@ -3,7 +3,7 @@ class Api::AlbumsController < ApplicationController
   respond_to :json
 
   def index
-    respond_with Album.all# (include: [:pictures])
+    respond_with Album.all(include: [:pictures])
   end
 
   def show

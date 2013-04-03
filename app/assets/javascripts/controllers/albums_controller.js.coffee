@@ -1,1 +1,1 @@
-SwannBertholinV2.AlbumsController = Ember.ArrayController.extend()
+App.AlbumsController = Ember.ArrayController.extend()

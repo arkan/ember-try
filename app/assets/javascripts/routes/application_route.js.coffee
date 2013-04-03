@@ -1,1 +1,1 @@
-SwannBertholinV2.ApplicationRoute = Ember.Route.extend()
+# App.ApplicationRoute = Ember.Route.extend()

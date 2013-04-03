@@ -1,0 +1,37 @@
+<script type="text/x-handlebars" data-template-name="application">
+  <div id="wrapper">
+    <div id="menu">
+      <h2>{{#linkTo "index"}}Title{{/linkTo}}</h2>
+      <p>
+        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+      </p>
+      {{#linkTo "albums"}}Albums{{/linkTo}}
+    </div>
+    <div id="content">
+      {{outlet}}
+    </div>
+  </div>
+</script>
+
+
+<script type="text/x-handlebars" data-template-name="albums">
+  <h1>Posts</h1>
+  <ul>
+    {{#each album in controller}}
+      <li>{{#linkTo 'album' album}}{{album.name}}{{/linkTo}}</li>
+    {{else}}
+      <li>There are no albums.</li>
+    {{/each}}
+  </ul>
+</script>
+
+<script type="text/x-handlebars" data-template-name="album">
+  {{render "back"}}
+  <ul>
+    {{#each picture in pictures}}
+      <img {{bindAttr src="picture.url"}}>
+    {{else}}
+      <li>There are no pictures.</li>
+    {{/each}}
+  </ul>
+</script>

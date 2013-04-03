@@ -1,1 +1,2 @@
-SwannBertholinV2.AlbumView = Ember.View.extend()
+App.AlbumView = Ember.View.extend
+  templateName: 'album'

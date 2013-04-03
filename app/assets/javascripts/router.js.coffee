@@ -1,14 +1,17 @@
-SwannBertholinV2.Router.map ->
+# App.Router.reopen
+#   location: 'history'
+#   rootURL: '/'
+
+App.Router.map (match) ->
   @resource "albums", ->
     @resource "album",
-      path: ":album_id"
-
+      path: "/:album_id"
 
   # @route 'albums', path: '/'
   # @route 'album', path: '/album/:id'
 
-# SwannBertholinV2.AlbumsRoute = Ember.Route.extend
-#   model: -> SwannBertholinV2.Album.find()
+# App.AlbumsRoute = Ember.Route.extend
+#   model: -> App.Album.find()
 #
-# SwannBertholinV2.AlbumRoute = Ember.Route.extend
-#   model: -> SwannBertholinV2.Album.find(2)
+# App.AlbumRoute = Ember.Route.extend
+#   model: -> App.Album.find(2)
