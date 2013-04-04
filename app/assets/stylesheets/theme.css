@@ -7,6 +7,7 @@ div#menu{
   width: 200px;
   margin: 20px;
   float: left;
+  position: relative;
 }
 
 div#content {
@@ -14,6 +15,10 @@ div#content {
   width: 80%;
   margin: 20px;
   float: left;
+  position: relative;
+}
+div#album{
+  position: relative;
 }
 
 span.clear{

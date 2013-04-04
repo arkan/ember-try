@@ -5,28 +5,29 @@
       <p>
         Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
       </p>
-      {{#linkTo "albums"}}Albums{{/linkTo}}
     </div>
-    <div id="content">
-      {{outlet}}
-    </div>
+    {{outlet}}
   </div>
 </script>
 
 
 <script type="text/x-handlebars" data-template-name="albums">
-  <h1>Posts</h1>
-  <ul>
-    {{#each album in controller}}
-      <li>{{#linkTo 'album' album}}{{album.name}}{{/linkTo}}</li>
-    {{else}}
-      <li>There are no albums.</li>
-    {{/each}}
-  </ul>
+  <div id="content">
+    <h1>Posts</h1>
+    <ul>
+      {{#each album in controller}}
+        <li>{{#linkTo 'album' album}}{{album.name}}{{/linkTo}}</li>
+      {{else}}
+        <li>There are no albums.</li>
+      {{/each}}
+    </ul>
+    {{outlet}}
+  </div>
 </script>
 
 <script type="text/x-handlebars" data-template-name="album">
-  {{render "back"}}
+  <div id="album">
+  {{#linkTo 'albums'}}Albums{{/linkTo}}
   <ul>
     {{#each picture in pictures}}
       <img {{bindAttr src="picture.url"}}>
@@ -34,4 +35,5 @@
       <li>There are no pictures.</li>
     {{/each}}
   </ul>
+  </div>
 </script>
